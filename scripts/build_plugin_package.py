@@ -23,10 +23,10 @@ PLUGIN_JSON = {
     "description": "Frontend design skill for Codex that improves visual systems, interaction, motion, responsiveness, states, accessibility, and design QA.",
     "author": {
         "name": "Craft Frontend Design contributors",
-        "url": "https://github.com/Udkam/design-skill",
+        "url": "https://github.com/Udkam/codex-design-skill",
     },
-    "homepage": "https://github.com/Udkam/design-skill",
-    "repository": "https://github.com/Udkam/design-skill",
+    "homepage": "https://github.com/Udkam/codex-design-skill",
+    "repository": "https://github.com/Udkam/codex-design-skill",
     "license": "MIT",
     "keywords": [
         "codex",
@@ -45,7 +45,7 @@ PLUGIN_JSON = {
         "developerName": "Craft Frontend Design contributors",
         "category": "Productivity",
         "capabilities": ["Write", "Review"],
-        "websiteURL": "https://github.com/Udkam/design-skill",
+        "websiteURL": "https://github.com/Udkam/codex-design-skill",
         "defaultPrompt": [
             "Use $craft-frontend-design to redesign this dashboard.",
             "Use $craft-frontend-design to remove AI-template UI patterns.",

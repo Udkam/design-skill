@@ -9,7 +9,7 @@
 ## Clone
 
 ```bash
-git clone https://github.com/Udkam/design-skill.git
+git clone https://github.com/Udkam/codex-design-skill.git
 cd design-skill
 ```
 
