@@ -16,6 +16,8 @@ Check:
 
 Use browser inspection for overflow, text clipping, and asset rendering.
 
+For personal sites and portfolios, preserve the existing identity system before changing the hero pattern. Project, game, repo, console, or pet entry points should remain discoverable, but the surface should not default into a generic product-marketing layout.
+
 ## Mobile H5
 
 Prioritize:
@@ -88,6 +90,8 @@ Avoid:
 - ambiguous controls;
 - animation that hides hit feedback;
 - fixed desktop-only play area.
+
+For pets, toys, route docks, and floating controls, verify mobile placement, viewport-safe offsets, 44px or larger tap targets, and overlap with bottom navigation or content.
 
 ## Responsive Checklist
 

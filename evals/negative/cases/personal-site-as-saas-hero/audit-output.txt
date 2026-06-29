@@ -1,0 +1,5 @@
+Expected audit result:
+
+- Error-level `reduced-motion-js-loop` because `requestAnimationFrame` keeps running while reduced motion only exists in CSS.
+- Warning-level findings for personal-site SaaS hero conversion, purple/blue gradient reliance, generic three-card hero structure, and undersized floating controls.
+- Info-level `shared-component-blast-radius` for the shared floating island.

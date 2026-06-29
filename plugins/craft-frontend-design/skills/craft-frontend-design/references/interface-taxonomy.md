@@ -143,20 +143,24 @@ Structure:
 
 - identity signal;
 - project index;
+- project/game/repo/console entries when they are part of the personal surface;
 - selected case studies;
 - process/proof;
 - contact path.
 
 Common misuse:
 
+- converting the site into a generic SaaS landing hero;
 - visual effects that obscure work;
 - no project evidence;
-- novelty navigation that blocks scanning.
+- novelty navigation that blocks scanning;
+- deleting existing pet/toy/console identity instead of refining it.
 
 Acceptance:
 
 - work is inspectable;
 - personality is specific;
+- project entries are clear without turning the site into a product homepage;
 - motion does not slow reading.
 
 ### Ecommerce / Content Site
@@ -229,3 +233,4 @@ Acceptance:
 - player state is readable;
 - controls fit input mode;
 - feedback is immediate and does not block play.
+- pet, dock, or floating controls have mobile boundaries and do not cover primary content.

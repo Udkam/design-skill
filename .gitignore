@@ -18,6 +18,7 @@ evals/output/
 evals/screenshots/
 tmp-audit-fixtures/
 screenshots/
+dist/*.zip
 *.tmp
 *.log
 

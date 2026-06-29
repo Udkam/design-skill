@@ -31,7 +31,7 @@ Every use of this skill must produce or report:
 - design thesis: the specific visual and interaction idea, not a generic style label;
 - interface classification: which operating mode applies and why;
 - visual system: typography, color semantics, layout rhythm, spacing, component morphology, assets, icons, and light/dark stance;
-- interaction/motion system: feedback states, duration/easing/token choices, gesture/hover/tap behavior, and reduced-motion behavior;
+- interaction/motion system: feedback states, duration/easing/token choices, gesture/hover/tap behavior, and reduced-motion behavior for CSS plus JS/canvas/video loops;
 - state coverage: loading, empty, error, disabled, selected/current, pending/saving, and success where relevant;
 - responsive strategy: desktop/mobile behavior, breakpoints, density changes, and touch targets;
 - accessibility notes: focus, keyboard path, names/labels, alt text, contrast, forms, and color-independent state;
@@ -57,7 +57,7 @@ First classify the interface:
 - Web app / SaaS: open on the usable workflow, not a marketing hero.
 - Dashboard / operational console: optimize scan, compare, exception handling, and repeated use.
 - Editor / workspace: prioritize canvas/work surface, toolbars, panels, history, selection, and save states.
-- Portfolio / personal site: express identity while preserving navigation, project proof, and readable case studies.
+- Portfolio / personal site: express identity while preserving navigation, project proof, readable case studies, and existing personal/pet/toy/console affordances.
 - Ecommerce / content site: prioritize inspection, filtering, reading, purchase/subscription, and trust.
 - Mobile H5: short task flow, thumb reach, compact navigation, low bandwidth, and touch feedback.
 - WeChat mini program: lightweight platform-fit flows, familiar controls, concise Chinese-facing copy when applicable.
@@ -93,6 +93,7 @@ Remove or justify:
 - only building the first viewport without states;
 - dashboard or operational tools designed like marketing pages;
 - mini-program or mobile H5 flows designed like desktop landing pages.
+- personal sites converted into generic SaaS heroes that remove identity, project proof, or interactive affordances.
 
 ## Implementation Workflow
 
@@ -101,7 +102,7 @@ Remove or justify:
 3. Complete the design system decision pass.
 4. Sample references responsibly when useful. Record source, extracted mechanism, forbidden-to-copy items, transferable principle, and implementation effect.
 5. Implement the full expected experience: first viewport or workspace, primary flow, repeated items, realistic states, responsive behavior, focus/hover/tap feedback, and media/assets where useful.
-6. Tune motion for causality, hierarchy, continuity, or feedback. Add reduced-motion behavior.
+6. Tune motion for causality, hierarchy, continuity, or feedback. Add reduced-motion behavior for CSS and JS-driven motion.
 7. Run the audit script when files are available:
 
 ```bash
@@ -121,6 +122,7 @@ Before final delivery, check and report:
 - keyboard focus and focus-visible states;
 - image alt text and icon accessible names;
 - reduced motion;
+- shared component, island, layout provider, pet, dock, or floating-control blast radius when those files changed;
 - loading, empty, error, disabled, selected/current, pending/saving, success states as relevant;
 - public hygiene if changing docs, release files, evals, or publishable repository files.
 

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lina Byte - personal lab</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Skip to projects</a>
+    <header class="site-header">
+      <p class="brand-mark" aria-label="Lina Byte personal mark">LB</p>
+      <nav aria-label="Primary">
+        <a aria-current="page" href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#play">Game</a>
+        <a href="#repo">Repo</a>
+        <a href="#console">Console</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="kicker">Personal lab / interactive systems</p>
+          <h1 id="hero-title">Lina builds small tools with visible personality.</h1>
+          <p class="lede">A portfolio of browser experiments, repo notes, and console-style utilities. The pet is a guide, not the main event.</p>
+          <div class="actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="#console">Open console</a>
+          </div>
+        </div>
+
+        <figure class="artifact">
+          <img src="./assets/lab-map.svg" alt="Illustrated route map connecting projects, game, repo, and console entries">
+          <figcaption>Current surface: selected, loading, empty, error, disabled, pending, and success states are visible.</figcaption>
+        </figure>
+      </section>
+
+      <section id="projects" class="route-panel" aria-labelledby="projects-title">
+        <h2 id="projects-title">Project routes</h2>
+        <div class="route-grid">
+          <article class="route-card is-selected">
+            <p class="route-type">Project</p>
+            <h3>Notebook renderer</h3>
+            <p>Case study with code notes, image states, and a recovery path.</p>
+            <a href="#repo">Inspect repo</a>
+          </article>
+          <article class="route-card">
+            <p class="route-type">Game</p>
+            <h3>Timing tile</h3>
+            <p>Small play loop with pause, restart, keyboard, and tap controls.</p>
+            <a href="#play">Start game</a>
+          </article>
+          <article class="route-card is-pending" aria-busy="true">
+            <p class="route-type">Console</p>
+            <h3>Signal desk</h3>
+            <p>Pending sync state with a visible cancel path.</p>
+            <button type="button">Cancel sync</button>
+          </article>
+          <article class="route-card is-disabled" aria-disabled="true">
+            <p class="route-type">Archive</p>
+            <h3>Old sketches</h3>
+            <p>Disabled while assets are being cleaned.</p>
+            <button type="button" disabled>Unavailable</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="state-strip" aria-label="State examples">
+        <span>Loading route map</span>
+        <span>No pinned repo yet</span>
+        <span>Console error recovered</span>
+        <span>Game saved</span>
+      </section>
+    </main>
+
+    <aside class="pet-shell" aria-label="Pocket pet status">
+      <button class="pet-button" type="button" aria-pressed="false">
+        <span aria-hidden="true">LB</span>
+        <span>Pet guide</span>
+      </button>
+    </aside>
+
+    <nav class="route-dock" aria-label="Quick routes">
+      <a href="#projects">Projects</a>
+      <a href="#play">Game</a>
+      <a href="#repo">Repo</a>
+      <a href="#console">Console</a>
+    </nav>
+
+    <script type="module" src="./components/islands/pocket-pet.js"></script>
+  </body>
+</html>

@@ -69,6 +69,8 @@ Run the normal public checks:
 ```bash
 python scripts/check_public_hygiene.py .
 python -m py_compile .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py
+python -m py_compile scripts/build_plugin_package.py
+python -m py_compile scripts/package_release.py
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/landing
 ```
 
@@ -101,7 +103,7 @@ Regenerate later with `python scripts/build_plugin_package.py`.
 ```json
 {
   "name": "craft-frontend-design",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "display_name": "Craft Frontend Design",
   "description": "Frontend design skill for Codex that improves visual systems, interaction, motion, responsiveness, states, accessibility, and design QA.",
   "author": "Community",
@@ -124,7 +126,7 @@ A local marketplace entry can point at the plugin directory or packaged archive 
     {
       "id": "craft-frontend-design",
       "name": "Craft Frontend Design",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "path": "plugins/craft-frontend-design"
     }
   ]
@@ -147,6 +149,8 @@ python scripts/check_public_hygiene.py .
 ```bash
 python -m py_compile .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py
 python -m py_compile scripts/check_public_hygiene.py
+python -m py_compile scripts/build_plugin_package.py
+python -m py_compile scripts/package_release.py
 ```
 
 4. Run eval audits:
@@ -157,6 +161,7 @@ python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py eva
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/mobile-h5
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/mini-program
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/game-ui
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/personal-site-interactive
 ```
 
 5. Run negative eval audits and confirm they produce the expected findings:
@@ -167,6 +172,7 @@ python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py eva
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/motion-without-reduced-motion
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/desktop-style-mini-program
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/dashboard-as-marketing-page
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/personal-site-as-saas-hero
 ```
 
 6. Regenerate the plugin skeleton:
@@ -175,17 +181,32 @@ python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py eva
 python scripts/build_plugin_package.py
 ```
 
-7. Run Codex skill/plugin validators if available locally.
-8. Update `CHANGELOG.md`.
-9. Create release notes.
-10. Tag the release:
+7. Generate local release archives:
+
+```bash
+python scripts/package_release.py
+```
+
+Expected local outputs:
+
+```text
+dist/craft-frontend-design-skill-v0.3.0.zip
+dist/craft-frontend-design-plugin-v0.3.0.zip
+```
+
+These archives are local release artifacts. They are ignored by Git unless a future release policy explicitly chooses to track them.
+
+8. Run Codex skill/plugin validators if available locally.
+9. Update `CHANGELOG.md`.
+10. Create release notes.
+11. Tag the release:
 
 ```bash
 git tag v0.3.0
 git push origin v0.3.0
 ```
 
-11. Package or publish through the plugin process available to your environment.
+12. Package or publish through the plugin process available to your environment.
 
 ## Public History Warning
 

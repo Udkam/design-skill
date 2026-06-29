@@ -69,6 +69,8 @@ Use one of:
 
 Reduced motion should remove parallax, scroll chasing, transform-heavy movement, blur loops, and repeated background motion. Preserve instant state changes and simple opacity if useful.
 
+CSS reduced-motion rules are only the first layer. JS loops, `requestAnimationFrame`, canvas renderers, background video, ScrollTrigger, GSAP timelines, and long write-on animations must pause, cancel, or render a static state when reduced motion is active.
+
 ## Interaction State Checklist
 
 Define:

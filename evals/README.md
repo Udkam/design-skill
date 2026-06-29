@@ -10,6 +10,7 @@ python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py eva
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/mobile-h5
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/mini-program
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/game-ui
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/personal-site-interactive
 ```
 
 Each case contains:

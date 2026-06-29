@@ -1,0 +1,5 @@
+Expected audit result:
+
+- No error-level findings.
+- No warning-level findings.
+- Info-level `shared-component-blast-radius` may appear for the synthetic pet island and should be treated as review context, not a failure.

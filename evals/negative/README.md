@@ -10,6 +10,7 @@ python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py eva
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/motion-without-reduced-motion
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/desktop-style-mini-program
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/dashboard-as-marketing-page
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/personal-site-as-saas-hero
 ```
 
 Expected result: each command should produce findings. Cases with error-level findings return a non-zero exit code; warning-only cases may return zero.

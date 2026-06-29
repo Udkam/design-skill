@@ -1,0 +1,116 @@
+:root {
+  --purple: #6d28d9;
+  --blue: #2563eb;
+  --ink: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 0;
+  color: var(--ink);
+  font: 16px/1.5 Inter, ui-sans-serif, system-ui, sans-serif;
+  background:
+    radial-gradient(circle at 18% 10%, #7c3aed 0, transparent 32%),
+    radial-gradient(circle at 82% 12%, #2563eb 0, transparent 30%),
+    linear-gradient(135deg, #2e1065, #1d4ed8 55%, #111827);
+}
+
+.hero {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 8vw;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #c4b5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+h1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  line-height: 0.92;
+}
+
+.subhead {
+  max-width: 720px;
+  color: #dbeafe;
+}
+
+.cta-row,
+.route-dock {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.primary-cta,
+.secondary-cta,
+.route-dock a,
+.floating-pet {
+  border: 0;
+  border-radius: 999px;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--purple), var(--blue));
+  transition: all 1200ms ease;
+}
+
+.primary-cta,
+.secondary-cta {
+  padding: 10px 16px;
+}
+
+.feature-grid {
+  width: min(1040px, 100%);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 52px;
+}
+
+.feature-card {
+  min-height: 220px;
+  padding: 24px;
+  border: 1px solid rgb(255 255 255 / 22%);
+  border-radius: 24px;
+  background: rgb(255 255 255 / 10%);
+  backdrop-filter: blur(16px);
+}
+
+.floating-pet {
+  position: fixed;
+  right: 10px;
+  bottom: 44px;
+  width: 36px;
+  height: 36px;
+}
+
+.route-dock {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  padding: 10px;
+  background: rgb(17 24 39 / 70%);
+  border-radius: 999px;
+}
+
+.route-dock a {
+  padding: 8px 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0ms;
+    animation-duration: 0ms;
+  }
+}

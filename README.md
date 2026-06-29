@@ -83,6 +83,7 @@ python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py eva
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/mobile-h5
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/mini-program
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/game-ui
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/personal-site-interactive
 python scripts/check_public_hygiene.py .
 ```
 
@@ -130,6 +131,7 @@ Restart Codex if the old skill still appears.
 .agents/skills/craft-frontend-design/   # Skill package
 docs/                                   # Install, distribution, and publication docs
 evals/                                  # Reproducible public eval suite
+plugins/                                # Generated local/plugin-ready skeleton
 scripts/                                # Repository-level validation scripts
 ```
 

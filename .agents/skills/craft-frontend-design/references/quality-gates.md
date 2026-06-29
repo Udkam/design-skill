@@ -33,7 +33,7 @@ Fail if any are true:
 
 - placeholder copy remains;
 - images that matter have no alt text;
-- motion exists with no reduced-motion path;
+- motion exists with no reduced-motion path, including JS loops, canvas, video, scroll timelines, or GSAP;
 - primary controls lack focus visibility;
 - mobile layout horizontally overflows;
 - dashboard/tool starts as a marketing landing page;
@@ -49,6 +49,8 @@ Fail if any are true:
 - Keyboard focus visible.
 - Alt text and accessible names present.
 - Reduced motion present when motion exists.
+- Shared island, theme controller, layout provider, pet, dock, or floating-control changes report blast radius and route-wide impact.
+- Homepage visual changes and shared component fixes are separable for review or commit when both are touched.
 - Loading, empty, error, disabled, current/selected, pending/saving, success states covered as relevant.
 - Audit script run when files are available.
 - Public hygiene run when docs/release/eval files change.
