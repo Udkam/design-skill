@@ -1,0 +1,18 @@
+<view class="booking-page">
+  <view class="date-row" aria-label="自习室日期选择">
+    <button class="date-chip is-selected">今天</button>
+    <button class="date-chip">明天</button>
+  </view>
+  <view class="room-list">
+    <view class="room-card">
+      <image src="/assets/room-a.png" mode="aspectFill" aria-label="A 自习室靠窗座位"></image>
+      <text class="room-title">A 室可预约</text>
+      <text class="state-copy">加载时段时保留房间卡片。空时段显示下一天。错误提示保留重试入口。</text>
+      <button class="primary">预约 14:00</button>
+    </view>
+    <view class="room-card is-disabled">
+      <text class="room-title">B 室清洁中，暂不可用</text>
+      <button class="primary" disabled>不可预约</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+.landing {
+  min-height: 100vh;
+  background: #f7f4ea;
+  color: #1d241f;
+}
+.proof-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+  gap: clamp(20px, 5vw, 64px);
+  align-items: center;
+  min-height: 92vh;
+  padding: clamp(20px, 6vw, 72px);
+  border-bottom: 1px solid #2e3a31;
+}
+.eyebrow {
+  color: #7b3f1d;
+  font-weight: 700;
+}
+.primary,
+.secondary {
+  min-height: 44px;
+  border: 1px solid #1d241f;
+  background: #f5c04e;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+.secondary {
+  background: #fffdf8;
+}
+.primary:focus-visible,
+.secondary:focus-visible {
+  outline: 3px solid #146b4f;
+  outline-offset: 3px;
+}
+@media (max-width: 760px) {
+  .proof-hero {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

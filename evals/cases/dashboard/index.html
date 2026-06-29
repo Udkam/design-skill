@@ -1,0 +1,19 @@
+<main class="ops-dashboard">
+  <header class="shift-bar">
+    <h1>Berth shift board</h1>
+    <button class="sync">Sync harbor feed</button>
+  </header>
+  <section class="status-grid" aria-label="Berth status">
+    <img src="/assets/harbor-map.webp" alt="Harbor map with active berth markers">
+    <table>
+      <thead>
+        <tr><th>Berth</th><th>Vessel</th><th>Risk</th><th>Maintenance</th></tr>
+      </thead>
+      <tbody>
+        <tr class="risk-high"><td>A3</td><td>Marlin Star</td><td>Error: delayed tug</td><td>Crane disabled</td></tr>
+        <tr class="is-current"><td>B1</td><td>Qing Route</td><td>Loading clearance</td><td>Empty blocker list</td></tr>
+        <tr><td>C2</td><td>North Vale</td><td>Pending inspection</td><td>Success: crew assigned</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>

@@ -1,0 +1,39 @@
+.booking-page {
+  min-height: 100vh;
+  padding: 24rpx;
+  background: #f7f4ec;
+  color: #1f2a24;
+  background-image: url("/assets/subtle-room-texture.png");
+}
+.date-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16rpx;
+}
+.date-chip,
+.primary {
+  min-height: 44px;
+  border: 1px solid #1f2a24;
+  background: #fffdf7;
+}
+.date-chip:focus-visible,
+.primary:focus-visible {
+  outline: 3px solid #16724f;
+  outline-offset: 3px;
+}
+.is-selected {
+  background: #d9f1df;
+}
+.room-list {
+  display: grid;
+  gap: 20rpx;
+  margin-top: 20rpx;
+}
+.is-disabled {
+  opacity: 0.62;
+}
+@media (min-width: 600px) {
+  .room-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

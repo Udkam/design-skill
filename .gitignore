@@ -1,0 +1,31 @@
+# Local Codex/session notes
+codex.local.md
+*.local.md
+.codex-log/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Temporary eval and QA outputs
+evals/tmp/
+evals/output/
+evals/screenshots/
+tmp-audit-fixtures/
+screenshots/
+*.tmp
+*.log
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx

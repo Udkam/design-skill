@@ -1,0 +1,6 @@
+Frontend design heuristic audit
+Files scanned: 2
+Findings: 0 (errors: 0, warnings: 0, info: 0)
+Scope: heuristic implementation signals, not aesthetic judgment.
+
+No heuristic findings.

@@ -1,0 +1,44 @@
+.ops-dashboard {
+  min-height: 100vh;
+  color: #1d2520;
+  background: #f3f6f0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.shift-bar,
+.status-grid {
+  display: grid;
+  gap: 12px;
+  padding: clamp(14px, 2vw, 28px);
+}
+.sync {
+  min-height: 44px;
+  border: 1px solid #1d2520;
+  background: #f8c14a;
+  transition: transform 140ms ease;
+}
+.sync:focus-visible {
+  outline: 3px solid #14532d;
+  outline-offset: 3px;
+}
+.status-grid {
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.6fr);
+}
+.risk-high {
+  background: #ffe1d6;
+  border-left: 4px solid #9f2d20;
+}
+.is-current {
+  outline: 2px solid #276749;
+}
+@media (max-width: 820px) {
+  .status-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
