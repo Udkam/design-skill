@@ -1,0 +1,15 @@
+Frontend design heuristic audit
+Files scanned: 2
+Findings: 7 (errors: 1, warnings: 5, info: 1)
+Scope: heuristic implementation signals, not aesthetic judgment.
+
+[ERROR] reduced-motion: Motion is present but no reduced-motion handling was found.
+[WARN] transition-all (styles.css:8): Broad transition-all detected; target specific properties to avoid accidental motion and layout jank.
+  evidence: transition: all
+[WARN] long-duration (styles.css:11): Long UI animation duration detected; routine UI motion should usually stay below 700ms.
+  evidence: transition-duration: 1200ms
+[WARN] many-animate-in: Many animate-in patterns detected; confirm elements do not all enter at once.
+  evidence: 6 entrance-like references
+[WARN] focus-visible: Interactive elements were found but no visible focus styling signal was detected.
+[WARN] responsive-signals: No obvious responsive CSS or utility signals found.
+[INFO] visual-assets: No obvious visual asset references found; confirm assets are not needed for this interface.

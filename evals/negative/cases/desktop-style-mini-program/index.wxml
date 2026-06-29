@@ -1,0 +1,9 @@
+<view class="hero desktop-shell">
+  <text class="headline">Next-generation booking platform</text>
+  <view class="feature-grid">
+    <view class="feature-card">Feature one</view>
+    <view class="feature-card">Feature two</view>
+    <view class="feature-card">Feature three</view>
+  </view>
+  <button>Get started</button>
+</view>

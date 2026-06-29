@@ -1,0 +1,40 @@
+Frontend design heuristic audit
+Files scanned: 2
+Findings: 19 (errors: 0, warnings: 18, info: 1)
+Scope: heuristic implementation signals, not aesthetic judgment.
+
+[WARN] placeholder-feature-name (index.html:6): Placeholder feature/card naming detected.
+  evidence: Feature one
+[WARN] placeholder-feature-name (index.html:7): Placeholder feature/card naming detected.
+  evidence: Feature two
+[WARN] placeholder-feature-name (index.html:8): Placeholder feature/card naming detected.
+  evidence: Feature three
+[WARN] generic-marketing-phrase (index.html:3): Generic marketing phrase detected; make copy specific to user task, domain, or state.
+  evidence: AI-powered
+[WARN] generic-marketing-phrase (index.html:3): Generic marketing phrase detected; make copy specific to user task, domain, or state.
+  evidence: next-generation
+[WARN] generic-marketing-phrase (index.html:4): Generic marketing phrase detected; make copy specific to user task, domain, or state.
+  evidence: Transform your workflow
+[WARN] generic-marketing-phrase (index.html:4): Generic marketing phrase detected; make copy specific to user task, domain, or state.
+  evidence: seamless experience
+[WARN] hero-gradient-three-cards: Hero + gradient + repeated cards pattern detected; confirm this is not a default AI/SaaS template.
+[WARN] purple-blue-gradient (styles.css:3): Repeated purple/blue gradients detected; confirm they are a deliberate brand system.
+  evidence: background: linear-gradient(135deg, purple, blue);
+[WARN] purple-blue-gradient (styles.css:6): Repeated purple/blue gradients detected; confirm they are a deliberate brand system.
+  evidence: background-image: radial-gradient(circle, #8b5cf6, #3b82f6);
+[WARN] purple-blue-gradient (styles.css:14): Repeated purple/blue gradients detected; confirm they are a deliberate brand system.
+  evidence: background: linear-gradient(90deg, violet, indigo);
+[WARN] blur-blob-orb (index.html:2): Repeated blob/orb/blur decoration detected; remove unless it supports the design thesis.
+  evidence: <section class="hero orb">
+[WARN] blur-blob-orb (styles.css:5): Repeated blob/orb/blur decoration detected; remove unless it supports the design thesis.
+  evidence: .orb {
+[WARN] blur-blob-orb (styles.css:7): Repeated blob/orb/blur decoration detected; remove unless it supports the design thesis.
+  evidence: filter: blur(8px);
+[WARN] blur-blob-orb (styles.css:15): Repeated blob/orb/blur decoration detected; remove unless it supports the design thesis.
+  evidence: backdrop-filter: blur(24px);
+[WARN] blur-blob-orb (styles.css:17): Repeated blob/orb/blur decoration detected; remove unless it supports the design thesis.
+  evidence: .blob {
+[WARN] blur-blob-orb (styles.css:18): Repeated blob/orb/blur decoration detected; remove unless it supports the design thesis.
+  evidence: filter: blur(32px);
+[WARN] state-coverage: No obvious loading/empty/error/disabled/pending state signal found.
+[INFO] visual-assets: No obvious visual asset references found; confirm assets are not needed for this interface.

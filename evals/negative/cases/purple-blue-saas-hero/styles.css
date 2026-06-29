@@ -1,0 +1,19 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, purple, blue);
+}
+.orb {
+  background-image: radial-gradient(circle, #8b5cf6, #3b82f6);
+  filter: blur(8px);
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.feature-card {
+  background: linear-gradient(90deg, violet, indigo);
+  backdrop-filter: blur(24px);
+}
+.blob {
+  filter: blur(32px);
+}

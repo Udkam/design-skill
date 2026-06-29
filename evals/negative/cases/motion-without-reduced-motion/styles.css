@@ -1,0 +1,22 @@
+.motion-demo {
+  display: grid;
+  gap: 20px;
+}
+.animate-in,
+.fade-in {
+  animation: slide-in 1200ms ease-in-out;
+  transition: all 1.2s ease;
+}
+.panel {
+  transition-duration: 1200ms;
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(64px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

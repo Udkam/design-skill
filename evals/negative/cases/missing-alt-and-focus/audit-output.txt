@@ -1,0 +1,14 @@
+Frontend design heuristic audit
+Files scanned: 2
+Findings: 6 (errors: 2, warnings: 4, info: 0)
+Scope: heuristic implementation signals, not aesthetic judgment.
+
+[ERROR] missing-img-alt (index.html:3): HTML image without alt text detected.
+  evidence: <img src="/assets/intake-photo.webp">
+[ERROR] empty-button-name (index.html:6): Button appears to lack an accessible name.
+  evidence: <button><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12"></path></svg></button>
+[WARN] form-labels: Form controls may be missing labels or accessible names.
+  evidence: 1 controls, 0 label/name signals
+[WARN] focus-visible: Interactive elements were found but no visible focus styling signal was detected.
+[WARN] responsive-signals: No obvious responsive CSS or utility signals found.
+[WARN] state-coverage: No obvious loading/empty/error/disabled/pending state signal found.

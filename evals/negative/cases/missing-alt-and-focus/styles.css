@@ -1,0 +1,7 @@
+.intake {
+  display: grid;
+  gap: 16px;
+}
+button {
+  min-height: 44px;
+}

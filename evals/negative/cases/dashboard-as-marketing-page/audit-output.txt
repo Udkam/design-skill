@@ -1,0 +1,24 @@
+Frontend design heuristic audit
+Files scanned: 2
+Findings: 12 (errors: 0, warnings: 11, info: 1)
+Scope: heuristic implementation signals, not aesthetic judgment.
+
+[WARN] placeholder-feature-name (index.html:6): Placeholder feature/card naming detected.
+  evidence: Benefit one
+[WARN] placeholder-feature-name (index.html:7): Placeholder feature/card naming detected.
+  evidence: Benefit two
+[WARN] placeholder-feature-name (index.html:8): Placeholder feature/card naming detected.
+  evidence: Benefit three
+[WARN] generic-marketing-phrase (index.html:3): Generic marketing phrase detected; make copy specific to user task, domain, or state.
+  evidence: Unlock your potential
+[WARN] generic-marketing-phrase (index.html:3): Generic marketing phrase detected; make copy specific to user task, domain, or state.
+  evidence: all-in-one solution
+[WARN] generic-marketing-phrase (index.html:4): Generic marketing phrase detected; make copy specific to user task, domain, or state.
+  evidence: Elevate your business
+[WARN] generic-marketing-phrase (index.html:4): Generic marketing phrase detected; make copy specific to user task, domain, or state.
+  evidence: seamless experience
+[WARN] hero-gradient-three-cards: Hero + gradient + repeated cards pattern detected; confirm this is not a default AI/SaaS template.
+[WARN] dashboard-marketing-page: Dashboard path contains hero/card marketing signals; operational dashboards should prioritize dense status and exception handling.
+[WARN] focus-visible: Interactive elements were found but no visible focus styling signal was detected.
+[WARN] state-coverage: No obvious loading/empty/error/disabled/pending state signal found.
+[INFO] visual-assets: No obvious visual asset references found; confirm assets are not needed for this interface.

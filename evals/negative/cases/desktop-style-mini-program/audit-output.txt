@@ -1,0 +1,20 @@
+Frontend design heuristic audit
+Files scanned: 2
+Findings: 10 (errors: 0, warnings: 9, info: 1)
+Scope: heuristic implementation signals, not aesthetic judgment.
+
+[WARN] placeholder-feature-name (index.wxml:4): Placeholder feature/card naming detected.
+  evidence: Feature one
+[WARN] placeholder-feature-name (index.wxml:5): Placeholder feature/card naming detected.
+  evidence: Feature two
+[WARN] placeholder-feature-name (index.wxml:6): Placeholder feature/card naming detected.
+  evidence: Feature three
+[WARN] generic-marketing-phrase (index.wxml:2): Generic marketing phrase detected; make copy specific to user task, domain, or state.
+  evidence: Next-generation
+[WARN] hero-gradient-three-cards: Hero + gradient + repeated cards pattern detected; confirm this is not a default AI/SaaS template.
+[WARN] mobile-platform-mismatch: Mini-program/mobile flow contains hero-page signals; mobile task flows should start with the primary task.
+[WARN] focus-visible: Interactive elements were found but no visible focus styling signal was detected.
+[WARN] fixed-width (app.wxss:2): Large fixed width detected; verify mobile behavior.
+  evidence: width: 1200px
+[WARN] state-coverage: No obvious loading/empty/error/disabled/pending state signal found.
+[INFO] visual-assets: No obvious visual asset references found; confirm assets are not needed for this interface.

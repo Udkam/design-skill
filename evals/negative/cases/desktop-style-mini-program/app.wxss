@@ -1,0 +1,13 @@
+.desktop-shell {
+  width: 1200px;
+  min-height: 720px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f5f7ff, #ffffff);
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.feature-card {
+  padding: 32px;
+}

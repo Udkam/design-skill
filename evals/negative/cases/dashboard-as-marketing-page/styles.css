@@ -1,0 +1,11 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #7c3aed, #2563eb);
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.feature-card {
+  padding: 40px;
+}

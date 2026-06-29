@@ -29,6 +29,73 @@ plugins/craft-frontend-design/
   assets/
 ```
 
+This repository includes that local/plugin-ready skeleton under `plugins/craft-frontend-design/`.
+It is a package skeleton only; it does not mean the plugin has been published to an official Codex marketplace.
+
+## Generate Or Refresh The Skeleton
+
+The plugin skill copy is generated from the canonical repo-scoped skill:
+
+```text
+.agents/skills/craft-frontend-design/
+```
+
+Regenerate it from the repository root:
+
+```bash
+python scripts/build_plugin_package.py
+```
+
+On Windows, use `py` if needed:
+
+```powershell
+py scripts\build_plugin_package.py
+```
+
+The script refreshes:
+
+```text
+plugins/craft-frontend-design/.codex-plugin/plugin.json
+plugins/craft-frontend-design/skills/craft-frontend-design/
+plugins/craft-frontend-design/README.md
+```
+
+Do not hand-edit the generated skill copy unless you also update the canonical skill and rerun the script.
+
+## Local Checks
+
+Run the normal public checks:
+
+```bash
+python scripts/check_public_hygiene.py .
+python -m py_compile .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/landing
+```
+
+If your Codex installation includes a plugin validator, run it against:
+
+```text
+plugins/craft-frontend-design
+```
+
+The validator path varies by installation, so this repository does not hard-code it.
+
+## Delete Generated Skeleton
+
+If you want to remove the generated plugin package while keeping the source skill:
+
+```bash
+rm -rf plugins/craft-frontend-design
+```
+
+Windows PowerShell:
+
+```powershell
+Remove-Item -Recurse -Force plugins\craft-frontend-design
+```
+
+Regenerate later with `python scripts/build_plugin_package.py`.
+
 ## Example `plugin.json`
 
 ```json
@@ -92,17 +159,33 @@ python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py eva
 python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/cases/game-ui
 ```
 
-5. Run a Codex skill validator if available locally.
-6. Update `CHANGELOG.md`.
-7. Create release notes.
-8. Tag the release:
+5. Run negative eval audits and confirm they produce the expected findings:
 
 ```bash
-git tag v0.2.0
-git push origin v0.2.0
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/purple-blue-saas-hero
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/missing-alt-and-focus
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/motion-without-reduced-motion
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/desktop-style-mini-program
+python .agents/skills/craft-frontend-design/scripts/audit_frontend_design.py evals/negative/cases/dashboard-as-marketing-page
 ```
 
-9. Package or publish through the plugin process available to your environment.
+6. Regenerate the plugin skeleton:
+
+```bash
+python scripts/build_plugin_package.py
+```
+
+7. Run Codex skill/plugin validators if available locally.
+8. Update `CHANGELOG.md`.
+9. Create release notes.
+10. Tag the release:
+
+```bash
+git tag v0.3.0
+git push origin v0.3.0
+```
+
+11. Package or publish through the plugin process available to your environment.
 
 ## Public History Warning
 
